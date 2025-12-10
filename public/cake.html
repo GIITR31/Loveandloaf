@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cake | Love &amp; Loaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-inner-top">
+        <a href="/" class="logo">Love &amp; <span>Loaf</span></a>
+
+        <div class="nav-search">
+          <div class="nav-search-box">
+            
+            <input
+              id="global-search"
+              type="text"
+              placeholder="Search cakes, flavours, occasions…"
+            />
+          </div>
+        </div>
+        <div class="nav-contact">
+          <span>Order support</span>
+          <a href="https://wa.me/9582804186" target="_blank" rel="noreferrer">
+            <strong>9871898740,9582804186</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-categories">
+<div class="nav-categories-inner">
+  <a href="/cakes.html">Cakes</a>
+  <a href="/cakes.html?category=Designer%20Cakes">Designer Cakes</a>
+  <a href="/cakes.html?category=Birthday%20Cakes">Birthday Cakes</a>
+  <a href="/cakes.html?category=Anniversary%20Cakes">Anniversary Cakes</a>
+  <a href="/cakes.html?category=Cakes%20for%20Kids">Cakes for Kids</a>
+  <a href="/cakes.html?category=Cakes%20for%20Him">Cakes for Him</a>
+  <a href="/cakes.html?category=Cakes%20for%20Her">Cakes for Her</a>
+  <a href="/cakes.html?category=Desserts">Desserts</a>
+
+  <!-- New dropdown -->
+  <div class="nav-dropdown">
+    <button class="nav-drop-toggle" type="button">
+      Other categories ▾
+    </button>
+    <div class="nav-drop-menu">
+      <a href="/cakes.html?category=Gen%20Z%20Cakes">Gen Z Cakes</a>
+      <a href="/cakes.html?category=Anniversary%20Cakes">Anniversary Cakes</a>
+      <a href="/cakes.html?category=Cakes%20for%20Son">Cakes for Son</a>
+      <a href="/cakes.html?category=Cakes%20for%20Wife">Cakes for Wife</a>
+      <a href="/cakes.html?category=First%20Birthday%20Cakes">First Birthday Cakes</a>
+      <a href="/cakes.html?category=Cakes%20for%20Kids">Cakes for Kids</a>
+      <a href="/cakes.html?category=Designer%20Cakes">Designer Cakes</a>
+      <a href="/cakes.html?category=Cakes%20for%20Daughter">Cakes for Daughter</a>
+      <a href="/cakes.html?category=Cakes%20for%20Boyfriend">Cakes for Boyfriend</a>
+      <a href="/cakes.html?category=Cakes%20for%20Girlfriend">Cakes for Girlfriend</a>
+      <a href="/cakes.html?category=Cakes%20for%20Husband">Cakes for Husband</a>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="detail-layout">
+        <!-- LEFT: image slider -->
+        <div class="detail-card">
+          <div class="cake-image-wrap" id="slider-main">
+            <img id="cake-image" src="/images/placeholder-cake.jpg" alt="Cake" />
+          </div>
+          <div
+            id="slider-thumbs"
+            style="display:flex;gap:0.4rem;margin-top:0.6rem;flex-wrap:wrap;"
+          ></div>
+        </div>
+
+        <!-- RIGHT: options + WhatsApp -->
+        <div class="detail-card">
+          <h1 id="cake-name" class="section-title">Cake</h1>
+          <p id="cake-desc" class="section-subtitle"></p>
+
+          <div class="option-row">
+            <label for="flavour-select">Flavour</label>
+            <select id="flavour-select"></select>
+          </div>
+
+          <div class="option-row">
+            <label>Weight</label>
+            <div class="chip-row" id="weight-row"></div>
+          </div>
+
+          <div class="option-row">
+            <label for="delivery-date">Preferred delivery date (optional)</label>
+            <input id="delivery-date" type="date" />
+          </div>
+
+          <div class="option-row">
+            <label for="delivery-address">Delivery address</label>
+            <textarea
+              id="delivery-address"
+              rows="3"
+              placeholder="Flat / house number, street, landmark, city"
+            ></textarea>
+          </div>
+
+          <div class="option-row">
+            <label for="cake-message">Message on the cake (optional)</label>
+            <input
+              id="cake-message"
+              type="text"
+              maxlength="60"
+              placeholder="e.g. Happy 1st Birthday Aayu!"
+            />
+            <p class="helper-text">Short and sweet; up to about 5–6 words works best.</p>
+          </div>
+
+          <div class="option-row">
+            <label for="extra-notes">Anything else? (optional)</label>
+            <textarea
+              id="extra-notes"
+              rows="2"
+              placeholder="Allergies, colour preference, time window, etc."
+            ></textarea>
+          </div>
+
+          <div class="price-display" id="price-display">₹0</div>
+          <div class="helper-text">Price updates as you change the weight.</div>
+
+          <button id="whatsapp-btn" class="btn-primary" style="margin-top: 0.8rem">
+            Order Now on WhatsApp
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="footer-year"></span> Love &amp; Loaf · Home bakery</div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/loveloafbakers" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://wa.me/9582804186" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/js/global-search.js"></script>
+    <script type="module" src="/js/detail.js"></script>
+  </body>
+</html>

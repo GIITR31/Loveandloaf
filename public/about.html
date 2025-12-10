@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>About | Love &amp; Loaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-inner-top">
+        <a href="/" class="logo">Love &amp; <span>Loaf</span></a>
+
+        <div class="nav-search">
+          <div class="nav-search-box">
+            <input
+              id="global-search"
+              type="text"
+              placeholder="Search cakes, flavours, occasions…"
+            />
+          </div>
+        </div>
+        <div class="nav-contact">
+          <span>Order support</span>
+          <a href="https://wa.me/9582804186" target="_blank" rel="noreferrer">
+            <strong>9871898740,9582804186</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-categories">
+        <div class="nav-categories-inner">
+          <a href="/cakes.html">Cakes</a>
+          <a href="/cakes.html?category=Designer%20Cakes">Designer Cakes</a>
+          <a href="/cakes.html?category=Birthday%20Cakes">Birthday Cakes</a>
+          <a href="/cakes.html?category=Anniversary%20Cakes">Anniversary Cakes</a>
+          <a href="/cakes.html?category=Cakes%20for%20Kids">Cakes for Kids</a>
+          <a href="/cakes.html?category=Cakes%20for%20Him">Cakes for Him</a>
+          <a href="/cakes.html?category=Cakes%20for%20Her">Cakes for Her</a>
+          <a href="/cakes.html?category=Desserts">Desserts</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-drop-toggle" type="button">
+              Other categories ▾
+            </button>
+            <div class="nav-drop-menu">
+              <a href="/cakes.html?category=Gen%20Z%20Cakes">Gen Z Cakes</a>
+              <a href="/cakes.html?category=Anniversary%20Cakes">Anniversary Cakes</a>
+              <a href="/cakes.html?category=Cakes%20for%20Son">Cakes for Son</a>
+              <a href="/cakes.html?category=Cakes%20for%20Wife">Cakes for Wife</a>
+              <a href="/cakes.html?category=First%20Birthday%20Cakes">First Birthday Cakes</a>
+              <a href="/cakes.html?category=Cakes%20for%20Kids">Cakes for Kids</a>
+              <a href="/cakes.html?category=Designer%20Cakes">Designer Cakes</a>
+              <a href="/cakes.html?category=Cakes%20for%20Daughter">Cakes for Daughter</a>
+              <a href="/cakes.html?category=Cakes%20for%20Boyfriend">Cakes for Boyfriend</a>
+              <a href="/cakes.html?category=Cakes%20for%20Girlfriend">Cakes for Girlfriend</a>
+              <a href="/cakes.html?category=Cakes%20for%20Husband">Cakes for Husband</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="about-layout">
+        <div>
+          <div class="baker-photo-wrap">
+            <img src="mumma.png" />
+          </div>
+        </div>
+
+        <div>
+          <h1 class="section-title">The story of Love &amp; Loaf</h1>
+          <p class="section-subtitle">
+            Love &amp; Loaf is a home bakery built on family recipes, careful attention to
+            detail, and the joy of seeing people cut into a cake made just for them.
+          </p>
+
+          <!-- Follow me block just under intro -->
+<div class="follow-me">
+  <span>Follow me:</span>
+
+  <a href="https://www.instagram.com/loveloafbakers"
+     target="_blank"
+     rel="noreferrer"
+     class="social-link"
+     aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/9582804186"
+     target="_blank"
+     rel="noreferrer"
+     class="social-link"
+     aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-bullet"></div>
+              <strong>2023 · First home-baked orders</strong>
+              <p>Started baking for close family and friends, taking a handful of orders.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-bullet"></div>
+              <strong>2024 · Word-of-mouth grows</strong>
+              <p>Neighbourhood birthdays, anniversaries, and kids’ parties become regulars.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-bullet"></div>
+              <strong>Today · Love &amp; Loaf online</strong>
+              <p>
+                Now every design, flavour and size is neatly organised here so you can order in a
+                few taps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="footer-year"></span> Love &amp; Loaf · Home bakery</div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/loveloafbakers" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://wa.me/9582804186" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear().toString();
+    </script>
+    <script src="/js/global-search.js"></script>
+  </body>
+</html>

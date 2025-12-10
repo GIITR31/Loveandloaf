@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin · Love &amp; Loaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <h1 class="section-title">Love &amp; Loaf · Admin</h1>
+      <p class="section-subtitle">
+        Add, update or remove cakes. Changes appear instantly on the website.
+      </p>
+
+      <div id="login-card" class="admin-card">
+        <h2 style="margin-bottom: 0.7rem">Login</h2>
+        <label for="admin-password">Admin password</label>
+        <input id="admin-password" type="password" />
+        <button id="login-button" class="btn-primary" style="margin-top: 0.8rem; width: 100%">
+          Login
+        </button>
+        <p id="login-error" class="helper-text" style="margin-top: 0.5rem; color: #d14a4a"></p>
+      </div>
+
+      <div id="dashboard" class="admin-card" style="display: none; margin-top: 1.2rem">
+        <h2 style="margin-bottom: 0.7rem">Cakes</h2>
+
+        <form id="cake-form" class="admin-form">
+          <input type="hidden" id="cake-id" />
+
+          <label>
+            Cake name
+            <input id="cake-name-input" required />
+          </label>
+
+          <label>
+            Description
+            <textarea id="cake-desc-input" rows="3"></textarea>
+          </label>
+
+          <label>
+            Category (select one main)
+            <select id="cake-category-input">
+              <option>Gen Z Cakes</option>
+              <option>Anniversary Cakes</option>
+              <option>Cakes for Son</option>
+              <option>Cakes for Wife</option>
+              <option>First Birthday Cakes</option>
+              <option>Cakes for Kids</option>
+              <option>Designer Cakes</option>
+              <option>Cakes for Daughter</option>
+              <option>Cakes for Boyfriend</option>
+              <option>Cakes for Girlfriend</option>
+              <option>Cakes for Husband</option>
+            </select>
+          </label>
+
+          <label>
+            Extra categories (optional, comma separated)
+            <input id="cake-extra-cats-input" placeholder="e.g. Birthday Cakes, Cakes for Kids" />
+          </label>
+
+          <label>
+            Flavours (comma separated)
+            <input id="cake-flavours-input" placeholder="Chocolate, Vanilla, Red Velvet" />
+          </label>
+
+          <label>
+            Price ½ kg (₹)
+            <input id="price-05-input" type="number" min="0" step="1" />
+          </label>
+          <label>
+            Price 1 kg (₹)
+            <input id="price-1-input" type="number" min="0" step="1" />
+          </label>
+          <label>
+            Price 2 kg (₹)
+            <input id="price-2-input" type="number" min="0" step="1" />
+          </label>
+
+          <label>
+            Rating (0–5)
+            <input id="cake-rating-input" type="number" min="0" max="5" step="0.1" />
+          </label>
+
+          <!-- Multi image upload -->
+          <label>
+            Images (you can select multiple)
+            <input id="cake-images-input" type="file" accept="image/*" multiple />
+          </label>
+          <div>
+            <span class="helper-text">Preview</span>
+            <div
+              id="cake-images-preview"
+              style="margin-top:0.3rem; display:flex; gap:0.4rem; flex-wrap:wrap;"
+            ></div>
+          </div>
+
+          <div class="admin-buttons">
+            <button type="submit" class="btn-primary">Save cake</button>
+            <button type="button" id="reset-button" class="btn-outline">Clear form</button>
+          </div>
+        </form>
+
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>From (₹)</th>
+              <th>Rating</th>
+              <th style="width: 120px">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="cakes-table-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script type="module" src="/js/admin.js"></script>
+  </body>
+</html>
