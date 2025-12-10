@@ -11,9 +11,9 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = process.env.PORT || 4000;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "changeme";
-const WHATSAPP_PHONE = process.env.WHATSAPP_PHONE || "911234567890";
+const PORT = process.env.PORT || 10000;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "ricgyc-vakti2-hacpaB";
+const WHATSAPP_PHONE = process.env.WHATSAPP_PHONE || "9582804186";
 
 // Init lowdb JSON db
 const defaultData = { cakes: [] };
